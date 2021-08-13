@@ -1,0 +1,80 @@
+minRto 0.2
+sendNum 4
+bandwidth 100Mbps
+delay  2ms
+PACKET_SIZE 1400
+data  1
+initialCwnd  1
+transport_prot ns3::TcpNewReno
+
+Flow 1 (10.0.1.1 -> 10.0.5.2)
+  Tx Packets: 128414
+  Tx Bytes:   186452932
+  TxOffered:  +42.81430140784680024395 Mbps
+  Rx Packets: 128384
+  Rx Bytes:   186409372
+  Throughput: +42.80429893189042425835 Mbps
+  FCT:  +34839373923.0ns
+Flow 2 (10.0.5.2 -> 10.0.1.1)
+  Tx Packets: 65112
+  Tx Bytes:   3398884
+  TxOffered:  +0.78064925162647860274 Mbps
+  Rx Packets: 65112
+  Rx Bytes:   3398884
+  Throughput: +0.78064925162647860274 Mbps
+  FCT:  +34831356007.0ns
+Flow 3 (10.0.2.1 -> 10.0.5.2)
+  Tx Packets: 77250
+  Tx Bytes:   112162804
+  TxOffered:  +30.08771620213311456067 Mbps
+  Rx Packets: 77222
+  Rx Bytes:   112122148
+  Throughput: +30.07681021417373790398 Mbps
+  FCT:  +29822882733.0ns
+Flow 4 (10.0.5.2 -> 10.0.2.1)
+  Tx Packets: 39388
+  Tx Bytes:   2059604
+  TxOffered:  +0.55263843154896596238 Mbps
+  Rx Packets: 39388
+  Rx Bytes:   2059604
+  Throughput: +0.55263843154896596238 Mbps
+  FCT:  +29814850107.0ns
+Flow 5 (10.0.3.1 -> 10.0.5.2)
+  Tx Packets: 54598
+  Tx Bytes:   79273500
+  TxOffered:  +25.37037689928335389210 Mbps
+  Rx Packets: 54569
+  Rx Bytes:   79231392
+  Throughput: +25.35690082177353001070 Mbps
+  FCT:  +24997184808.0ns
+Flow 6 (10.0.5.2 -> 10.0.3.1)
+  Tx Packets: 27973
+  Tx Bytes:   1465168
+  TxOffered:  +0.46928378902601345610 Mbps
+  Rx Packets: 27973
+  Rx Bytes:   1465168
+  Throughput: +0.46928378902601345610 Mbps
+  FCT:  +24977091206.0ns
+Flow 7 (10.0.4.1 -> 10.0.5.2)
+  Tx Packets: 38579
+  Tx Bytes:   56012512
+  TxOffered:  +22.59262875345155206894 Mbps
+  Rx Packets: 38546
+  Rx Bytes:   55964596
+  Throughput: +22.57330185021696075892 Mbps
+  FCT:  +19833906930.0ns
+Flow 8 (10.0.5.2 -> 10.0.4.1)
+  Tx Packets: 19809
+  Tx Bytes:   1039912
+  TxOffered:  +0.41980185681123474624 Mbps
+  Rx Packets: 19809
+  Rx Bytes:   1039912
+  Throughput: +0.41980185681123474624 Mbps
+  FCT:  +19817196768.0ns
+*** RED Static from switch queue ***
+298841 : packets received totally
+298721 : packets enqueued totally
+120 : packets dropped totally
+120 : packets dropped before enqueue totally
+0 : packets marked totally
+

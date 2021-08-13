@@ -1,0 +1,25 @@
+sendNum 5
+transport_prot TcpDctcp
+queuedisc RedQueueFrontDisc
+queuelimit 4195p
+threshold for DCTCP 20
+MinTh for CUBIC 20
+MaxTh for CUBIC 60
+access bandwidth 1000Mbps
+access delay  0.01ms
+neck bandwidth 1000Mbps
+neck delay  0.01ms
+data for transmission 0
+minRto 0.005
+initialCwnd  1
+PACKET_SIZE 1000
+start time 0
+stop time 45
+
+*** RED Static from switch queue ***
+received packets : 5336929
+euqueued packets : 5336929
+dropped packets : 0
+marked packets : 559300
+dropping ratio : 0
+marking ratio : 0.104798

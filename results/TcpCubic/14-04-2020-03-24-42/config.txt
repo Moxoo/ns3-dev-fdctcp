@@ -1,0 +1,17 @@
+sendNum 50
+transport_prot TcpCubic
+queuedisc FifoQueueDisc
+queuelimit 75p
+threshold for DCTCP 20
+access bandwidth 1000Mbps
+access delay  0.01ms
+neck bandwidth 1000Mbps
+neck delay  0.01ms
+data for transmission 4096KB
+minRto 0.2
+initialCwnd  1
+IP_PACKET_SIZE 1400
+start time 0
+stop time 5
+
+dropping ratio : 0.0689465

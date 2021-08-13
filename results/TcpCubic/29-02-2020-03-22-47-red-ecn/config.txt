@@ -1,0 +1,98 @@
+minRto 0.005
+sendNum 5
+bandwidth 1000Mbps
+delay  0.2ms
+PACKET_SIZE 1400
+data  1
+initialCwnd  10
+transport_prot TcpCubic
+queuedisc ns3::RedQueueDisc
+
+Flow 1 (10.0.1.1 -> 10.0.6.2)
+  Tx Packets: 84844
+  Tx Bytes:   123189292
+  TxOffered:  +205.08733401472586298052 Mbps
+  Rx Packets: 84672
+  Rx Bytes:   122939548
+  Throughput: +204.67155655294636273044 Mbps
+  FCT:  +4805339836.0ns
+Flow 2 (10.0.2.1 -> 10.0.6.2)
+  Tx Packets: 79834
+  Tx Bytes:   115914772
+  TxOffered:  +192.98735130374625164324 Mbps
+  Rx Packets: 79632
+  Rx Bytes:   115621468
+  Throughput: +192.49902732993216355974 Mbps
+  FCT:  +4805072300.0ns
+Flow 3 (10.0.3.1 -> 10.0.6.2)
+  Tx Packets: 80815
+  Tx Bytes:   117339184
+  TxOffered:  +195.30976483517955400202 Mbps
+  Rx Packets: 80638
+  Rx Bytes:   117082180
+  Throughput: +194.88198453970979441942 Mbps
+  FCT:  +4806280284.0ns
+Flow 4 (10.0.4.1 -> 10.0.6.2)
+  Tx Packets: 95542
+  Tx Bytes:   138721388
+  TxOffered:  +231.04604322407666619276 Mbps
+  Rx Packets: 95358
+  Rx Bytes:   138454220
+  Throughput: +230.60106418972552406928 Mbps
+  FCT:  +4803246524.0ns
+Flow 5 (10.0.5.1 -> 10.0.6.2)
+  Tx Packets: 72107
+  Tx Bytes:   104695168
+  TxOffered:  +174.31154830435514702482 Mbps
+  Rx Packets: 71902
+  Rx Bytes:   104397508
+  Throughput: +173.81596119695135210412 Mbps
+  FCT:  +4804967612.0ns
+Flow 6 (10.0.6.2 -> 10.0.1.1)
+  Tx Packets: 42640
+  Tx Bytes:   2222948
+  TxOffered:  +3.70141391945176824598 Mbps
+  Rx Packets: 42640
+  Rx Bytes:   2222948
+  Throughput: +3.70141391945176824598 Mbps
+  FCT:  +4804538046.0ns
+Flow 7 (10.0.6.2 -> 10.0.2.1)
+  Tx Packets: 40081
+  Tx Bytes:   2088728
+  TxOffered:  +3.47811922238516914074 Mbps
+  Rx Packets: 40081
+  Rx Bytes:   2088728
+  Throughput: +3.47811922238516914074 Mbps
+  FCT:  +4804270047.0ns
+Flow 8 (10.0.6.2 -> 10.0.3.1)
+  Tx Packets: 40610
+  Tx Bytes:   2117140
+  TxOffered:  +3.52454459735395023281 Mbps
+  Rx Packets: 40610
+  Rx Bytes:   2117140
+  Throughput: +3.52454459735395023281 Mbps
+  FCT:  +4805477568.0ns
+Flow 9 (10.0.6.2 -> 10.0.4.1)
+  Tx Packets: 47925
+  Tx Bytes:   2496976
+  TxOffered:  +4.15993366986149915206 Mbps
+  Rx Packets: 47925
+  Rx Bytes:   2496976
+  Throughput: +4.15993366986149915206 Mbps
+  FCT:  +4801953489.0ns
+Flow 10 (10.0.6.2 -> 10.0.5.1)
+  Tx Packets: 36251
+  Tx Bytes:   1890280
+  TxOffered:  +3.14773602533803607871 Mbps
+  Rx Packets: 36251
+  Rx Bytes:   1890280
+  Throughput: +3.14773602533803607871 Mbps
+  FCT:  +4804163970.0ns
+*** RED Static from switch queue ***
+413142 : packets received totally
+412202 : packets enqueued totally
+940 : packets dropped totally
+940 : packets dropped before enqueue totally
+15259 : packets marked totally
+Dropping ratio : 940/413142 = 0.002275247
+Marking ratio : 15259/413142 = 0.036934032

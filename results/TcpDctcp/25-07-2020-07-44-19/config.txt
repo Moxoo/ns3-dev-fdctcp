@@ -1,0 +1,25 @@
+sendNum 44
+transport_prot TcpDctcp
+queuedisc RedQueueFrontDisc
+queuelimit 100p
+threshold for DCTCP 30
+access bandwidth 1000Mbps
+access delay  0.001ms
+neck bandwidth 1000Mbps
+neck delay  0.001ms
+data for transmission 125KB
+minRto 0.2
+initialCwnd  1
+IP_PACKET_SIZE 1500
+start time 0
+stop time 1.2
+
+*** RED Static from switch queue ***
+received packets : 4149
+euqueued packets : 4047
+dropped packets : 102
+marked packets : 2808
+dropping ratio : 0.0245842
+marking ratio : 0.693847
+goodput :960.1 Mbps
+query FCT :46.9285 ms

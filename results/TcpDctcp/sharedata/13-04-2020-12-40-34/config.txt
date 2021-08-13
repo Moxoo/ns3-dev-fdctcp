@@ -1,0 +1,18 @@
+sendNum 5
+transport_prot TcpDctcp
+queuedisc RedQueueFrontDisc
+queuelimit 75p
+threshold for DCTCP 20
+MinTh for CUBIC 20
+MaxTh for CUBIC 60
+access bandwidth 1000Mbps
+access delay  0.01ms
+neck bandwidth 1000Mbps
+neck delay  0.01ms
+data for transmission 0
+minRto 0.01
+initialCwnd  1
+PACKET_SIZE 1400
+start time 0
+stop time 270
+

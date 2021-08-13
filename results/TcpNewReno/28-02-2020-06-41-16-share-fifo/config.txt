@@ -1,0 +1,78 @@
+minRto 0.2
+sendNum 4
+bandwidth 100Mbps
+delay  2ms
+PACKET_SIZE 1400
+data  1
+initialCwnd  1
+transport_prot ns3::TcpNewReno
+
+Flow 1 (10.0.1.1 -> 10.0.5.2)
+  Tx Packets: 170944
+  Tx Bytes:   248205092
+  TxOffered:  +57.03446240161279869990 Mbps
+  Rx Packets: 170944
+  Rx Bytes:   248205092
+  Throughput: +57.03446240161279869990 Mbps
+  FCT:  +34814753263.0ns
+Flow 2 (10.0.5.2 -> 10.0.1.1)
+  Tx Packets: 85472
+  Tx Bytes:   4444548
+  TxOffered:  +1.02153745950392938467 Mbps
+  Rx Packets: 85472
+  Rx Bytes:   4444548
+  Throughput: +1.02153745950392938467 Mbps
+  FCT:  +34806735347.0ns
+Flow 3 (10.0.2.1 -> 10.0.5.2)
+  Tx Packets: 79848
+  Tx Bytes:   115933700
+  TxOffered:  +37.35607291820805963471 Mbps
+  Rx Packets: 79846
+  Rx Bytes:   115930796
+  Throughput: +37.35513719342954850114 Mbps
+  FCT:  +24827813192.0ns
+Flow 4 (10.0.5.2 -> 10.0.2.1)
+  Tx Packets: 40057
+  Tx Bytes:   2084432
+  TxOffered:  +0.67193093593563757248 Mbps
+  Rx Packets: 40057
+  Rx Bytes:   2084432
+  Throughput: +0.67193093593563757248 Mbps
+  FCT:  +24817217229.0ns
+Flow 5 (10.0.3.1 -> 10.0.5.2)
+  Tx Packets: 41468
+  Tx Bytes:   60205940
+  TxOffered:  +32.43508506766793470720 Mbps
+  Rx Packets: 41468
+  Rx Bytes:   60205940
+  Throughput: +32.43508506766793470720 Mbps
+  FCT:  +14849583992.0ns
+Flow 6 (10.0.5.2 -> 10.0.3.1)
+  Tx Packets: 20734
+  Tx Bytes:   1078172
+  TxOffered:  +0.58220839958469505499 Mbps
+  Rx Packets: 20734
+  Rx Bytes:   1078172
+  Throughput: +0.58220839958469505499 Mbps
+  FCT:  +14814928823.0ns
+Flow 7 (10.0.4.1 -> 10.0.5.2)
+  Tx Packets: 6313
+  Tx Bytes:   9162280
+  TxOffered:  +15.03494019700431904039 Mbps
+  Rx Packets: 6288
+  Rx Bytes:   9125980
+  Throughput: +14.97537332836995545608 Mbps
+  FCT:  +4875193319.0ns
+Flow 8 (10.0.5.2 -> 10.0.4.1)
+  Tx Packets: 3245
+  Tx Bytes:   171344
+  TxOffered:  +0.28419794759663496975 Mbps
+  Rx Packets: 3245
+  Rx Bytes:   171344
+  Throughput: +0.28419794759663496975 Mbps
+  FCT:  +4823229765.0ns
+*** FIFO Static from switch queue ***
+298573 : packets received totally
+298546 : packets enqueued totally
+27 : packets dropped totally
+27 : packets dropped before enqueue totally
